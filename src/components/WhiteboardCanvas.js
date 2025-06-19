@@ -75,20 +75,10 @@ const WhiteboardCanvas = ({ currentTool }) => {
           });
           break;
         case 'line':
-        case 'arrow':
           shape = new fabric.Line([pointer.x, pointer.y, pointer.x, pointer.y], {
             stroke: '#000000',
             strokeWidth: 2,
           });
-          if (currentTool === 'arrow') {
-            shape.set({
-              endArrow: {
-                type: 'triangle',
-                width: 10,
-                height: 10,
-              },
-            });
-          }
           break;
         case 'text':
           shape = new fabric.IText('Type here', {
@@ -131,7 +121,6 @@ const WhiteboardCanvas = ({ currentTool }) => {
           });
           break;
         case 'line':
-        case 'arrow':
           shape.set({
             x2: pointer.x,
             y2: pointer.y,

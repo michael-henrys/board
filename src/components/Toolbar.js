@@ -5,7 +5,6 @@ const Toolbar = ({ currentTool, setCurrentTool }) => {
     { name: 'select', icon: '👆' },
     { name: 'pen', icon: '✏️' },
     { name: 'line', icon: '📏' },
-    { name: 'arrow', icon: '➡️' },
     { name: 'rectangle', icon: '⬜' },
     { name: 'ellipse', icon: '⭕' },
     { name: 'text', icon: 'T' },
